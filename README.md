@@ -33,6 +33,24 @@ The training procedure of a GAN involves iteratively updating the generator and 
 There are two good example related to GAN which could be find <a href="https://realpython.com/generative-adversarial-networks/" target="_blank"> here </a>.
 
 ### Quantum Circuit Born Machines:
+Quantum circuit Born machines (QCBM) are generative models which represent the probability distribution of classical dataset as quantum pure states instead of the thermal distribution like the Boltzmann machines.Therefore, Born machines can directly generate samples via projective measurement on the qubits. In a classical Boltzmann machine, you have interconnected binary units (neurons) that update their states probabilistically based on the states of other units. The probability distribution over the states of these units is used to model a distribution over data samples. Similarly, a QCBM utilizes qubits and quantum gates to build a probabilistic model of data distributions.
+
+QCBM can be used as a simulator to generate samples without access to their likelihoods, which is similar to the notable generative adversarial networks (GAN).
+
+#### Data set:
+In this article the Bars-and-Stripes dataset and Gaussian mixture distributions are used as a real data.
+
+#### Generator: 
+
+#### Discriminator:
+
+#### Training process:
+Gradient-based learning of quantum circuits has been devised for quantum control and discriminative tasks.
+
+
+The architecture of a Quantum Circuit Born Machine involves creating a parameterized quantum circuit that generates quantum states. These states are measured to obtain classical outcomes, and the probabilities of these outcomes are used to define a probability distribution over the data. The goal is to optimize the parameters of the quantum circuit such that the generated distribution matches the distribution of the training data.
+
+Quantum Circuit Born Machines are a part of the broader field of quantum machine learning, which explores the intersection of quantum computing and classical machine learning. They are an attempt to leverage the potential computational power of quantum systems to address complex machine learning tasks.
 
 ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/qcbm.png?raw=true)
 
