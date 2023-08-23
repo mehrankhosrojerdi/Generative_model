@@ -6,7 +6,7 @@ A generative model is a type of machine learning model that aims to generate new
 Generative models have a wide range of applications, including image synthesis, text generation, music composition, data augmentation, anomaly detection, and more. They're used whenever there's a need to generate new data points that share similar characteristics with a given dataset.
 
 ## Different types of in Generative model
-There are several types of generative models, each with its own approach to generating new data. In the following I'll describe some of them 
+There are several types of generative models, each with its own approach to generating new data. In the following, I'll describe some of them.
 
 ### Boltzmann Machines: 
 A Boltzmann Machine is a type of generative model in the field of machine learning. It's a type of stochastic neural network used for unsupervised learning tasks, including generative tasks. Boltzmann Machines are designed to learn and represent the joint probability distribution of a set of binary input variables. They consist of units (neurons) that are connected with weights, and the state of each unit can be either 0 or 1. These units are organized into visible units and hidden units. The primary types of Boltzmann Machines are the Restricted Boltzmann Machine (RBM) and the Boltzmann Restricted Boltzmann Machine (BRBM). As a final word for Boltzmann Machines are less commonly used in modern applications due to the emergence of more advanced techniques such as Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs). For further information about the Boltzmann Machines I find <a href="https://github.com/yell/boltzmann-machines" target="_blank"> a useful repository </a>as agood resource. The difference between the Boltzmann Machine and Restricted Boltzmann Machines is cleared by the below graphs. 
@@ -30,11 +30,10 @@ The training procedure of a GAN involves iteratively updating the generator and 
 
 ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/gans_gfg.jpg?raw=true)
 
-There are two good example related to GAN which could be find <a href="https://realpython.com/generative-adversarial-networks/" target="_blank"> here </a>
+There are two good example related to GAN which could be find <a href="https://realpython.com/generative-adversarial-networks/" target="_blank"> here </a>.
 
+### Quantum Circuit Born Machines:
 
-### Born Machines:
-
-
+![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/qcbm.png?raw=true)
 
 
