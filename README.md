@@ -6,7 +6,7 @@ In the README.md of this repository I'll address to the Quantum Circuit Born Mac
 ## Algorithms in Generative model
 
 ## Generative Adversarial Network
-![alt text](https://github.com/mehrankhosrojerdi/[reponame]/blob/[branch]/image.jpg?raw=true)
+![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/gans_gfg.jpg?raw=true)
 ## QCBM
 
 
