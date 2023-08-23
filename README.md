@@ -10,7 +10,8 @@ There are several types of generative models, each with its own approach to gene
 
 #### Boltzmann Machines: 
 A Boltzmann Machine is a type of generative model in the field of machine learning. It's a type of stochastic neural network used for unsupervised learning tasks, including generative tasks. Boltzmann Machines are designed to learn and represent the joint probability distribution of a set of binary input variables. They consist of units (neurons) that are connected with weights, and the state of each unit can be either 0 or 1. These units are organized into visible units and hidden units. The primary types of Boltzmann Machines are the Restricted Boltzmann Machine (RBM) and the Boltzmann Restricted Boltzmann Machine (BRBM). As a final word for Boltzmann Machines are less commonly used in modern applications due to the emergence of more advanced techniques such as Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs). For further information about the Boltzmann Machines I find <a href="https://github.com/yell/boltzmann-machines" target="_blank"> a useful repository </a>as agood resource. The difference between the Boltzmann Machine and Restricted Boltzmann Machines is cleared by the below graphs. 
-![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/Boltzmann Machine.jpg?raw=true)
+
+![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/Boltzmann_Machine.jpg?raw=true)
 
 #### Generative Adversarial Networks (GANs):
 GANs consist of a generator and a discriminator that compete against each other. The generator tries to create realistic data samples, while the discriminator aims to distinguish between real and generated samples. This adversarial training process results in the generator creating increasingly convincing data samples.
