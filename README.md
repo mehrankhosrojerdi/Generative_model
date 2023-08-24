@@ -9,7 +9,7 @@ Generative models have a wide range of applications, including image synthesis, 
 There are several types of generative models, each with its own approach to generating new data. In the following, I'll describe some of them.
 
 ### Boltzmann Machines: 
-A Boltzmann Machine is a type of generative model in the field of machine learning. It's a type of stochastic neural network used for unsupervised learning tasks, including generative tasks. Boltzmann Machines are designed to learn and represent the joint probability distribution of a set of binary input variables. They consist of units (neurons) that are connected with weights, and the state of each unit can be either 0 or 1. These units are organized into visible units and hidden units. The primary types of Boltzmann Machines are the Restricted Boltzmann Machine (RBM) and the Boltzmann Restricted Boltzmann Machine (BRBM). As a final word for Boltzmann Machines are less commonly used in modern applications due to the emergence of more advanced techniques such as Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs). For further information about the Boltzmann Machines I find <a href="https://github.com/yell/boltzmann-machines" target="_blank"> a useful repository </a>as agood resource. The difference between the Boltzmann Machine and Restricted Boltzmann Machines is cleared by the below graphs. 
+A `Boltzmann Machine` is a type of generative model in the field of machine learning. It's a type of stochastic neural network used for unsupervised learning tasks, including generative tasks. Boltzmann Machines are designed to learn and represent the joint probability distribution of a set of binary input variables. They consist of units (neurons) that are connected with weights, and the state of each unit can be either 0 or 1. These units are organized into visible units and hidden units. The primary types of Boltzmann Machines are the Restricted Boltzmann Machine (`RBM`) and the Boltzmann Restricted Boltzmann Machine (`BRBM`). As a final word for Boltzmann Machines are less commonly used in modern applications due to the emergence of more advanced techniques such as Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs). For further information about the Boltzmann Machines I find <a href="https://github.com/yell/boltzmann-machines" target="_blank"> a useful repository </a>as agood resource. The difference between the Boltzmann Machine and Restricted Boltzmann Machines is cleared by the below graphs. 
 
 ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/Boltzmann_Machine.jpg?raw=true)
 
@@ -28,11 +28,15 @@ The real data sample is a collection of training set that our generative model w
 #### Fine tune training: 
 The training procedure of a GAN involves iteratively updating the generator and discriminator networks. During each iteration, a batch of real data samples is used to train the discriminator, and another batch of random noise is used to generate fake data for training the generator. The gradients from the discriminator's loss are used to update the discriminator's weights, and the gradients from the generator's loss are used to update the generator's weights. Here it should be mentioned that the loss function is used to guide the training process. In GANs, the generator and discriminator are trained simultaneously in a competitive manner. The generator tries to minimize the discriminator's ability to differentiate between real and generated data, while the discriminator tries to maximize its ability to correctly classify real and fake data. This process results in a min-max game where the two networks are constantly improving against each other.
 
-![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/gans_gfg.jpg?raw=true)
+![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/gans_gfg.jpg?raw=true)  
+  
+ In addition, it would be nice if we look at the difference between the classical Neural Networks like GAN by Quantum Neural Networks like Born machine 
+ 
+ ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/ClassicalNN_vs_QuantumNN.jpg?raw=true)  
 
 There are two good example related to GAN which could be find <a href="https://realpython.com/generative-adversarial-networks/" target="_blank"> here </a>.
 
-### Quantum Circuit Born Machines:
+### Quantum Circuit Born Machines (QCBM):
 Quantum circuit Born machines (QCBM) are generative models which represent the probability distribution of classical dataset as quantum pure states instead of the thermal distribution like the Boltzmann machines.Therefore, Born machines can directly generate samples via projective measurement on the qubits. In a classical Boltzmann machine, you have interconnected binary units (neurons) that update their states probabilistically based on the states of other units. The probability distribution over the states of these units is used to model a distribution over data samples. Similarly, a QCBM utilizes qubits and quantum gates to build a probabilistic model of data distributions.
 
 QCBM can be used as a simulator to generate samples without access to their likelihoods, which is similar to the notable generative adversarial networks (GAN).
@@ -41,8 +45,7 @@ QCBM can be used as a simulator to generate samples without access to their like
 In this article the `Bars-and-Stripes` and `Gaussian mixture distributions` datasets are used as a real data sampels. These data are used in training the discriminator and their code could be find in this repository as a `data_set`.
 
 #### Generator: 
-The generator of this Born Machine is a Neural Network. This generator is a quantum circuit which consist of `CNOT gates` for making entanglement and `Arbitrary Rotational gates`, which  contrary to rotational gates, CNOT gates don't have learnable parameters.  
-
+The generator of this Born Machine is a Neural Network. This generator is a quantum circuit which consist of `CNOT gates` for making entanglement and `Arbitrary Rotational gates`, which  contrary to rotational gates, CNOT gates don't have learnable parameters. To learn the QCBM as a generative model, the gradient of the loss function will compute with respect to the quantum circuit parameters. The code related to the circuit could be find as a `Circuit` in this repository.
 
 #### Discriminator:
 
@@ -54,11 +57,15 @@ Gradient-based learning of quantum circuits has been devised for quantum control
 The architecture of a Quantum Circuit Born Machine involves creating a parameterized quantum circuit that generates quantum states. These states are measured to obtain classical outcomes, and the probabilities of these outcomes are used to define a probability distribution over the data. The goal is to optimize the parameters of the quantum circuit such that the generated distribution matches the distribution of the training data.
 
 Quantum Circuit Born Machines are a part of the broader field of quantum machine learning, which explores the intersection of quantum computing and classical machine learning. They are an attempt to leverage the potential computational power of quantum systems to address complex machine learning tasks.
-
+  
 ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/qcbm.png?raw=true)
-
-
+  
 ## Conclusion:
-`Here we train a circuit to produce a wave function by using it as a generator.`
-`Parameter learning of quantum circuits is adaptive in the sense that the implementation of quantum gates can even be non-ideal.`
+`Here we train a circuit to produce a wave function by using it as a generator.`  
+  
+`Parameter learning of quantum circuits is adaptive in the sense that the implementation of quantum gates can even be non-ideal.`  
+  
+`In addition, it would be nice if we look at the difference between the classical Neural Networks like GAN by Quantum Neural Networks like Born machine`
+   
+ ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/ClassicalNN_vs_QuantumNN.jpg?raw=true)  
 
