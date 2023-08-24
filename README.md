@@ -29,10 +29,6 @@ The real data sample is a collection of training set that our generative model w
 The training procedure of a GAN involves iteratively updating the generator and discriminator networks. During each iteration, a batch of real data samples is used to train the discriminator, and another batch of random noise is used to generate fake data for training the generator. The gradients from the discriminator's loss are used to update the discriminator's weights, and the gradients from the generator's loss are used to update the generator's weights. Here it should be mentioned that the loss function is used to guide the training process. In GANs, the generator and discriminator are trained simultaneously in a competitive manner. The generator tries to minimize the discriminator's ability to differentiate between real and generated data, while the discriminator tries to maximize its ability to correctly classify real and fake data. This process results in a min-max game where the two networks are constantly improving against each other.
 
 ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/gans_gfg.jpg?raw=true)  
-  
- In addition, it would be nice if we look at the difference between the classical Neural Networks like GAN by Quantum Neural Networks like Born machine 
- 
- ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/ClassicalNN_vs_QuantumNN.jpg?raw=true)  
 
 There are two good example related to GAN which could be find <a href="https://realpython.com/generative-adversarial-networks/" target="_blank"> here </a>.
 
@@ -65,7 +61,7 @@ Quantum Circuit Born Machines are a part of the broader field of quantum machine
   
 `Parameter learning of quantum circuits is adaptive in the sense that the implementation of quantum gates can even be non-ideal.`  
   
-`In addition, it would be nice if we look at the difference between the classical Neural Networks like GAN by Quantum Neural Networks like Born machine`
+`In addition, it would be nice if we look at the difference between the classical Neural Networks by Quantum Neural Networks`
    
  ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/ClassicalNN_vs_QuantumNN.jpg?raw=true)  
 
