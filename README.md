@@ -32,13 +32,13 @@ The training procedure of a GAN involves iteratively updating the generator and 
 
 There are two good example related to GAN which could be find <a href="https://realpython.com/generative-adversarial-networks/" target="_blank"> here </a>.
 
-### Quantum Circuit Born Machines:
+### <span style="color:yellow"> Quantum Circuit Born Machines </span>:
 Quantum circuit Born machines (QCBM) are generative models which represent the probability distribution of classical dataset as quantum pure states instead of the thermal distribution like the Boltzmann machines.Therefore, Born machines can directly generate samples via projective measurement on the qubits. In a classical Boltzmann machine, you have interconnected binary units (neurons) that update their states probabilistically based on the states of other units. The probability distribution over the states of these units is used to model a distribution over data samples. Similarly, a QCBM utilizes qubits and quantum gates to build a probabilistic model of data distributions.
 
 QCBM can be used as a simulator to generate samples without access to their likelihoods, which is similar to the notable generative adversarial networks (GAN).
 
 #### Data set:
-In this article the Bars-and-Stripes dataset and Gaussian mixture distributions are used as a real data.
+In this article the `Bars-and-Stripes` and `Gaussian mixture distributions` datasets are used as a real data.
 
 #### Generator: 
 
