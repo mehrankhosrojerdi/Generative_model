@@ -34,26 +34,21 @@ There are a couple of good examples related to GAN which could be find <a href="
 Quantum circuit Born machines (`QCBM`) utilizes qubits and quantum gates to build a probabilistic model of data distributions. QCBM can be used as a simulator to generate samples without access to their likelihoods, which is similar to the notable generative adversarial networks (GAN).
 
 ### Data set:
-In this article the `Bars-and-Stripes` and `Gaussian mixture distributions` datasets are used as a real data sampels. These data are used in training the discriminator and their code could be find in this repository as a `data_set`.
+In this article the `Bars-and-Stripes` and `Gaussian mixture distributions` datasets are used as a real data sampels. These data are used in training the discriminator and their code could be find in this repository as a `data_set.ipynb`.
 
 ### Generator: 
-The generator of this Born Machine is a Neural Network. This generator is a quantum circuit which consist of `CNOT gates` for making entanglement and `Arbitrary Rotational gates`. Contrary to rotational gates, CNOT gates don't have learnable parameters. To learn the QCBM as a generative model, the gradient of the loss function will compute with respect to the quantum circuit parameters. The code related to the circuit could be find as a `Circuit` in this repository.
+The generator of this Born Machine is a Neural Network. This generator is a quantum circuit which consist of `CNOT gates` for making entanglement and `Arbitrary Rotational gates`. Contrary to rotational gates, CNOT gates don't have learnable parameters. To learn the QCBM as a generative model, the gradient of the loss function will compute with respect to the quantum circuit parameters. The code related to the circuit could be find as a `Circuit.ipynb` in this repository.
 
 ### Discriminator:
-In this article, the discriminator is a QCBM, which is composed of the generator's data, the real data, and the loss function inside its code. 
+Discriminator is neural network for understanding the difference between the real data and fake data. In fact, discriminator is a loss function which is base on the Maximum Mean Discrepancy, which its code would be find in the `qcbm_gaussian.ipynb` file. 
 
 ### Training process:
-Gradient-based learning of quantum circuits has been devised for quantum control and discriminative tasks.
-
-The architecture of a Quantum Circuit Born Machine involves creating a parameterized quantum circuit that generates quantum states. These states are measured to obtain classical outcomes, and the probabilities of these outcomes are used to define a probability distribution over the data. The goal is to optimize the parameters of the quantum circuit such that the generated distribution matches the distribution of the training data.
-
-Quantum Circuit Born Machines are a part of the broader field of quantum machine learning, which explores the intersection of quantum computing and classical machine learning. They are an attempt to leverage the potential computational power of quantum systems to address complex machine learning tasks.
+Both discriminator and generator neural networks are trained during the training process. As we train our generator and discriminator neural networks, we can produce an indistinguishable wave function, allowing us to tune our quantum circuit for specific needs. A QCBM involves creating a parameterized quantum circuit that generates quantum states. 
   
 ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/qcbm.png?raw=true)
   
 ## Conclusion:
 `Here we train a circuit to produce a wave function by using it as a generator.`  
-  
 `Parameter learning of quantum circuits is adaptive in the sense that the implementation of quantum gates can even be non-ideal.`  
   
 
