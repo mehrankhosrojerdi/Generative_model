@@ -33,22 +33,19 @@ The training procedure of a GAN involves iteratively updating the generator and 
 There are two good example related to GAN which could be find <a href="https://realpython.com/generative-adversarial-networks/" target="_blank"> here </a>.
 
 ### Quantum Circuit Born Machines (QCBM):
-Quantum circuit Born machines (QCBM) are generative models which represent the probability distribution of classical dataset as quantum pure states instead of the thermal distribution like the Boltzmann machines.Therefore, Born machines can directly generate samples via projective measurement on the qubits. In a classical Boltzmann machine, you have interconnected binary units (neurons) that update their states probabilistically based on the states of other units. The probability distribution over the states of these units is used to model a distribution over data samples. Similarly, a QCBM utilizes qubits and quantum gates to build a probabilistic model of data distributions.
-
-QCBM can be used as a simulator to generate samples without access to their likelihoods, which is similar to the notable generative adversarial networks (GAN).
+Quantum circuit Born machines (`QCBM`) utilizes qubits and quantum gates to build a probabilistic model of data distributions. QCBM can be used as a simulator to generate samples without access to their likelihoods, which is similar to the notable generative adversarial networks (GAN).
 
 #### Data set:
 In this article the `Bars-and-Stripes` and `Gaussian mixture distributions` datasets are used as a real data sampels. These data are used in training the discriminator and their code could be find in this repository as a `data_set`.
 
 #### Generator: 
-The generator of this Born Machine is a Neural Network. This generator is a quantum circuit which consist of `CNOT gates` for making entanglement and `Arbitrary Rotational gates`, which  contrary to rotational gates, CNOT gates don't have learnable parameters. To learn the QCBM as a generative model, the gradient of the loss function will compute with respect to the quantum circuit parameters. The code related to the circuit could be find as a `Circuit` in this repository.
+The generator of this Born Machine is a Neural Network. This generator is a quantum circuit which consist of `CNOT gates` for making entanglement and `Arbitrary Rotational gates`. Contrary to rotational gates, CNOT gates don't have learnable parameters. To learn the QCBM as a generative model, the gradient of the loss function will compute with respect to the quantum circuit parameters. The code related to the circuit could be find as a `Circuit` in this repository.
 
 #### Discriminator:
+In this article, the discriminator is a QCBM, which is composed of the generator's data, the real data, and the loss function inside its code. 
 
 #### Training process:
 Gradient-based learning of quantum circuits has been devised for quantum control and discriminative tasks.
-
-
 
 The architecture of a Quantum Circuit Born Machine involves creating a parameterized quantum circuit that generates quantum states. These states are measured to obtain classical outcomes, and the probabilities of these outcomes are used to define a probability distribution over the data. The goal is to optimize the parameters of the quantum circuit such that the generated distribution matches the distribution of the training data.
 
