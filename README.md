@@ -24,20 +24,25 @@ The training procedure of a GAN involves iteratively updating the generator and 
 ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/gans_gfg.jpg?raw=true)  
 
 There are a couple of good examples related to GAN which could be find <a href="https://realpython.com/generative-adversarial-networks/" target="_blank"> here </a>.
+  
+ 
+## Difference between the Classical Neural Network and Quantum Neural Network
+  
+![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/ClassicalNN_vs_QuantumNN.jpg?raw=true)  
 
-### Quantum Circuit Born Machines (QCBM):
+## Quantum Circuit Born Machines (QCBM):
 Quantum circuit Born machines (`QCBM`) utilizes qubits and quantum gates to build a probabilistic model of data distributions. QCBM can be used as a simulator to generate samples without access to their likelihoods, which is similar to the notable generative adversarial networks (GAN).
 
-#### Data set:
+### Data set:
 In this article the `Bars-and-Stripes` and `Gaussian mixture distributions` datasets are used as a real data sampels. These data are used in training the discriminator and their code could be find in this repository as a `data_set`.
 
-#### Generator: 
+### Generator: 
 The generator of this Born Machine is a Neural Network. This generator is a quantum circuit which consist of `CNOT gates` for making entanglement and `Arbitrary Rotational gates`. Contrary to rotational gates, CNOT gates don't have learnable parameters. To learn the QCBM as a generative model, the gradient of the loss function will compute with respect to the quantum circuit parameters. The code related to the circuit could be find as a `Circuit` in this repository.
 
-#### Discriminator:
+### Discriminator:
 In this article, the discriminator is a QCBM, which is composed of the generator's data, the real data, and the loss function inside its code. 
 
-#### Training process:
+### Training process:
 Gradient-based learning of quantum circuits has been devised for quantum control and discriminative tasks.
 
 The architecture of a Quantum Circuit Born Machine involves creating a parameterized quantum circuit that generates quantum states. These states are measured to obtain classical outcomes, and the probabilities of these outcomes are used to define a probability distribution over the data. The goal is to optimize the parameters of the quantum circuit such that the generated distribution matches the distribution of the training data.
@@ -51,7 +56,5 @@ Quantum Circuit Born Machines are a part of the broader field of quantum machine
   
 `Parameter learning of quantum circuits is adaptive in the sense that the implementation of quantum gates can even be non-ideal.`  
   
-`In addition, it would be nice if we look at the difference between the classical Neural Networks by Quantum Neural Networks`
-   
- ![alt text](https://github.com/mehrankhosrojerdi/Quantum_Machine_Learning/blob/main/ClassicalNN_vs_QuantumNN.jpg?raw=true)  
+
 
